@@ -63,7 +63,7 @@
 
 **Cloudflare Pages або Netlify:** команда збірки `node build.js`, папка `dist`.
 
-Перевірити локально: `node build.js`, потім відкрити `dist/index.html` або запустити `npx serve dist`.
+Перевірити локально: `node build.js --local` і відкрити `dist/index.html` у браузері (посилання між мовами ведуть прямо на файли). Для публікації збирайте без `--local`.
 
 ## Швидкість
 

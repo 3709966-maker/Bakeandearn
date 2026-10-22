@@ -29,6 +29,9 @@ const imgExists = (src) => src && fs.existsSync(path.join(ROOT, 'img', src));
 // Шляхи сторінок відносно кореня сайту
 const pagePath = (lang, sub = '') => (lang === 'pl' ? '' : lang + '/') + sub;
 const relRoot = (p) => '../'.repeat(p.split('/').filter(Boolean).length);
+// node build.js --local: посилання ведуть прямо на index.html (щоб відкривати файли з диска)
+const LOCAL = process.argv.includes('--local');
+const href = (lang, sub = '') => pagePath(lang, sub) + (LOCAL ? 'index.html' : '');
 const absUrl = (p) => S.siteUrl.replace(/\/$/, '') + '/' + p;
 
 function priceHtml(item, t) {
@@ -81,21 +84,21 @@ ${S.gtmId ? `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=
 
 function header(t, r, sub) {
   const nav = !sub ? `<nav class="menu" aria-label="Menu"><a href="#how">${t.nav.how}</a><a href="#prices">${t.nav.prices}</a><a href="#faq">${t.nav.faq}</a><a href="#contact">${t.nav.contact}</a></nav>` : '';
-  const langs = LANGS.map((l) => `<a href="${r}${pagePath(l, sub)}" hreflang="${l}" lang="${l}" data-lang="${l}"${l === t.lang ? ' aria-current="page"' : ''}>${l === 'uk' ? 'UA' : l.toUpperCase()}</a>`).join('');
-  return `<header class="top"><div class="wrap"><a class="logo" href="${r}${pagePath(t.lang)}">${esc(S.brand)}</a>${nav}<div class="langs">${langs}</div>${!sub ? `<a class="btn" href="#order">${t.nav.cta}</a>` : ''}</div></header>`;
+  const langs = LANGS.map((l) => `<a href="${r}${href(l, sub)}" hreflang="${l}" lang="${l}" data-lang="${l}"${l === t.lang ? ' aria-current="page"' : ''}>${l === 'uk' ? 'UA' : l.toUpperCase()}</a>`).join('');
+  return `<header class="top"><div class="wrap"><a class="logo" href="${r}${href(t.lang)}">${esc(S.brand)}</a>${nav}<div class="langs">${langs}</div>${!sub ? `<a class="btn" href="#order">${t.nav.cta}</a>` : ''}</div></header>`;
 }
 
 function footer(t, r) {
   return `<footer><div class="wrap"><span>© ${new Date().getFullYear()} ${esc(S.company.name)} · NIP ${S.company.nip} · REGON ${S.company.regon}</span>
-<span><a href="${r}${pagePath(t.lang, 'privacy/')}">${t.footer.privacy}</a>${hasTracking() ? ` · <button type="button" class="linkbtn" id="cookie-settings">${t.footer.cookies}</button>` : ''}</span></div></footer>` +
-    (hasTracking() ? `<div class="consent" id="consent" role="dialog" aria-live="polite" hidden><p style="margin:0">${t.consent.text} <a href="${r}${pagePath(t.lang, 'privacy/')}">${t.footer.privacy}</a></p><div class="actions"><button class="btn" id="consent-yes">${t.consent.accept}</button><button class="btn ghost" id="consent-no">${t.consent.reject}</button></div></div>` : '');
+<span><a href="${r}${href(t.lang, 'privacy/')}">${t.footer.privacy}</a>${hasTracking() ? ` · <button type="button" class="linkbtn" id="cookie-settings">${t.footer.cookies}</button>` : ''}</span></div></footer>` +
+    (hasTracking() ? `<div class="consent" id="consent" role="dialog" aria-live="polite" hidden><p style="margin:0">${t.consent.text} <a href="${r}${href(t.lang, 'privacy/')}">${t.footer.privacy}</a></p><div class="actions"><button class="btn" id="consent-yes">${t.consent.accept}</button><button class="btn ghost" id="consent-no">${t.consent.reject}</button></div></div>` : '');
 }
 
 function clientConfig(t, r) {
   const cfg = {
     lang: t.lang, isRoot: t.lang === 'pl', whatsapp: S.whatsapp, formEndpoint: S.formEndpoint, formAccessKey: S.formAccessKey,
     ga4Id: S.ga4Id, metaPixelId: S.metaPixelId, decimal: t.lang === 'en' ? '.' : ',',
-    langUrls: Object.fromEntries(LANGS.map((l) => [l, r + pagePath(l)])),
+    langUrls: Object.fromEntries(LANGS.map((l) => [l, r + href(l)])),
     t: Object.assign({}, t.calc, t.form, { kg: t.units.kg, cur: t.units.cur })
   };
   return `<script>window.BLISS=${JSON.stringify(cfg).replace(/</g, '\\u003c')}</script><script src="${r}assets/main.js" defer></script>`;
@@ -181,7 +184,7 @@ ${sel('delivery', t.form.delivery, opts(t.form.deliveryOptions))}
 </div>
 <div class="field"><label for="f-design">${t.form.design}</label><textarea id="f-design" name="design" placeholder="${esc(t.form.designPh)}" data-label="${esc(t.form.design)}"></textarea></div>
 <input name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-<label class="check"><input type="checkbox" name="consent" required> <span>${t.form.consent} <a href="${r}${pagePath(lang, 'privacy/')}">${t.form.privacy}</a></span></label>
+<label class="check"><input type="checkbox" name="consent" required> <span>${t.form.consent} <a href="${r}${href(lang, 'privacy/')}">${t.form.privacy}</a></span></label>
 <button class="btn" type="submit" style="width:100%;margin-top:16px">${t.form.submit}</button>
 <div class="err" id="lead-err" role="alert"></div>
 <p class="note">${t.form.note}</p>
@@ -211,7 +214,7 @@ function privacyPage(lang) {
   const r = relRoot(p);
   return head(t, p, `${t.privacyPage.title} – ${S.brand}`, t.privacyPage.title, (l) => pagePath(l, 'privacy/')) + header(t, r, 'privacy/') +
     `<main><section><div class="wrap narrow"><h1>${t.privacyPage.title}</h1>${t.privacyPage.body.map((b) => `<p>${esc(fill(b))}</p>`).join('')}
-<p><a href="${r}${pagePath(lang)}">← ${t.privacyPage.back}</a></p></div></section></main>` + footer(t, r) + clientConfig(t, r) + '</body></html>\n';
+<p><a href="${r}${href(lang)}">← ${t.privacyPage.back}</a></p></div></section></main>` + footer(t, r) + clientConfig(t, r) + '</body></html>\n';
 }
 
 // ---------- Запис файлів ----------
