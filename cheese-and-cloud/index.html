@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ================================================================
+       GOOGLE TAG MANAGER (head) — paste your container ID (GTM-XXXXXXX)
+       and remove the comment markers. Recommended: load GA4 and the
+       Meta Pixel as tags INSIDE GTM, then you can skip the two blocks below.
+       All CTA buttons carry data-track="..." and script.js pushes
+       {event:'cta_click', cta_id:'...'} and {event:'generate_lead'} to dataLayer.
+       ================================================================ -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+  <!-- End Google Tag Manager (head) -->
+
+  <!-- ================================================================
+       GOOGLE ANALYTICS 4 (gtag.js) — only if you do NOT use GTM.
+       Replace G-XXXXXXXXXX with your Measurement ID.
+       ================================================================ -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+  <!-- End Google Analytics 4 -->
+
+  <!-- ================================================================
+       META (FACEBOOK) PIXEL — only if you do NOT use GTM.
+       Replace 000000000000000 with your Pixel ID.
+       ================================================================ -->
+  <!--
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '000000000000000');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=000000000000000&ev=PageView&noscript=1"></noscript>
+  -->
+  <!-- End Meta Pixel -->
+
+  <title>CHEESE &amp; CLOUD — Sernik Baskijski i Rolada Bezowa w Krakowie</title>
+  <meta name="description" content="Najkremowszy sernik baskijski i najlżejsza rolada bezowa w Krakowie. 5,99 zł za kawałek. Zamów cały deser z dostawą lub odbiorem.">
+  <meta name="theme-color" content="#f5f0e8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CHEESE &amp; CLOUD — Sernik Baskijski i Rolada Bezowa w Krakowie">
+  <meta property="og:description" content="Najkremowszy sernik baskijski i najlżejsza rolada bezowa w Krakowie. 5,99 zł za kawałek.">
+  <meta property="og:locale" content="pl_PL">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141210'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23f5f0e8' text-anchor='middle'%3EC%26amp;C%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json" id="schema">{}</script>
+</head>
+<body>
+  <!-- ================================================================
+       GOOGLE TAG MANAGER (noscript) — keep immediately after <body>.
+       Replace GTM-XXXXXXX and remove the comment markers.
+       ================================================================ -->
+  <!--
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+  <!-- End Google Tag Manager (noscript) -->
+
+  <a class="skip-link" href="#main" data-t="skip">Przejdź do treści</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="wrap topbar__inner">
+        <span class="topbar__item">
+          <span class="status" data-status></span>
+          <span><span data-cfg="days"></span> <strong data-cfg="hours">10:00–22:00</strong></span>
+        </span>
+        <a class="topbar__item topbar__loc" data-link="map" href="#location" target="_blank" rel="noopener" data-track="header-location-click">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span class="topbar__addr"><span data-cfg="street"></span>, </span><span data-cfg="city">Kraków</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav wrap" aria-label="Main">
+      <a class="logo" href="#top" data-track="header-logo-click" aria-label="CHEESE & CLOUD">
+        CHEESE <span class="logo__amp">&amp;</span> CLOUD
+      </a>
+      <ul class="nav__links">
+        <li><a href="#menu" data-t="nav.menu" data-track="nav-menu-click">Menu</a></li>
+        <li><a href="#order" data-t="nav.order" data-track="nav-order-click">Zamów</a></li>
+        <li><a href="#location" data-t="nav.location" data-track="nav-location-click">Gdzie jesteśmy</a></li>
+      </ul>
+      <div class="nav__aside">
+        <a class="icon-link" data-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram" data-track="header-instagram-click">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a class="icon-link" data-link="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok" data-track="header-tiktok-click">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 3c.4 2.4 1.9 4 4.4 4.3v3.3a8 8 0 0 1-4.3-1.3v6.4A5.8 5.8 0 1 1 10.9 10v3.4a2.5 2.5 0 1 0 2.4 2.5V3h3.3z" fill="currentColor"/></svg>
+        </a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="pl" aria-pressed="true" data-track="lang-pl-click">PL</button>
+          <button type="button" data-lang="en" aria-pressed="false" data-track="lang-en-click">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-t="hero.eyebrow"></p>
+          <h1 class="hero__title">
+            <span data-t="hero.title">Najkremowszy sernik baskijski i najlżejsza rolada bezowa w Krakowie.</span>
+            <em class="hero__price-line" data-t="hero.priceLine">Tylko 5,99 zł za kawałek.</em>
+          </h1>
+          <p class="hero__lead" data-t="hero.lead"></p>
+          <div class="hero__ctas">
+            <a class="btn btn--dark" href="#location" data-t="hero.ctaFind" data-track="hero-find-us-click">Zobacz, gdzie jesteśmy</a>
+            <a class="btn btn--outline" href="#order" data-t="hero.ctaOrder" data-track="hero-order-whole-click">Zamów cały deser</a>
+          </div>
+        </div>
+        <div class="hero__stamp" aria-hidden="true">
+          <span class="hero__stamp-price" data-cfg="price">5,99 zł</span>
+          <span class="hero__stamp-label" data-t="hero.perSlice">za kawałek</span>
+        </div>
+      </div>
+      <ul class="facts wrap" id="facts"></ul>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section class="section" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow" data-t="menu.eyebrow">Menu</p>
+          <h2 class="section__title" id="menu-title" data-t="menu.title"></h2>
+        </header>
+
+        <!-- Cards are generated from CONFIG.products in script.js -->
+        <div class="menu-grid" id="menu-grid"></div>
+
+        <aside class="toppings" aria-labelledby="toppings-title">
+          <div class="toppings__head">
+            <h3 class="toppings__title" id="toppings-title" data-t="menu.toppingsTitle">Dodatki</h3>
+            <p class="toppings__price" data-cfg="toppingPrice">+3,50 zł</p>
+          </div>
+          <p class="toppings__lead" data-t="menu.toppingsLead"></p>
+          <ul class="chips" id="toppings-list"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== ORDER FORM ===================== -->
+    <section class="section section--ink" id="order" aria-labelledby="order-title">
+      <div class="wrap order">
+        <div class="order__intro">
+          <p class="eyebrow" data-t="order.eyebrow">Zamówienie</p>
+          <h2 class="section__title" id="order-title" data-t="order.title">Zamów cały deser</h2>
+          <p class="order__lead" data-t="order.lead"></p>
+          <ul class="perks">
+            <li data-t="order.perks.0"></li>
+            <li data-t="order.perks.1"></li>
+            <li data-t="order.perks.2"></li>
+          </ul>
+        </div>
+
+        <div class="order__panel">
+          <!-- action = Web3Forms endpoint; script.js submits via fetch and falls back to WhatsApp/Telegram -->
+          <form class="form" id="order-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <!-- Honeypot against spam bots (Web3Forms) -->
+            <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="field" data-field="name">
+              <label for="f-name" data-t="order.name">Imię</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="60" aria-describedby="e-name">
+              <p class="field__error" id="e-name" aria-live="polite"></p>
+            </div>
+
+            <div class="field" data-field="phone">
+              <label for="f-phone" data-t="order.phone">Telefon</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+48 500 000 000" required aria-describedby="e-phone">
+              <p class="field__error" id="e-phone" aria-live="polite"></p>
+            </div>
+
+            <div class="form__row">
+              <div class="field field--grow" data-field="dessert">
+                <label for="f-dessert" data-t="order.dessert">Deser</label>
+                <select id="f-dessert" name="dessert" required aria-describedby="e-dessert"></select>
+                <p class="field__error" id="e-dessert" aria-live="polite"></p>
+              </div>
+              <div class="field field--qty" data-field="quantity">
+                <label for="f-quantity" data-t="order.quantity">Ilość</label>
+                <input id="f-quantity" name="quantity" type="number" inputmode="numeric" min="1" max="10" value="1" required aria-describedby="e-quantity">
+                <p class="field__error" id="e-quantity" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <fieldset class="field" data-field="method">
+              <legend data-t="order.method">Odbiór czy dostawa?</legend>
+              <div class="segmented">
+                <label class="segmented__opt">
+                  <input type="radio" name="method" value="pickup" checked>
+                  <span data-t="order.pickup">Odbiór osobisty</span>
+                </label>
+                <label class="segmented__opt">
+                  <input type="radio" name="method" value="delivery">
+                  <span data-t="order.delivery">Dostawa po Krakowie</span>
+                </label>
+              </div>
+              <p class="field__error" aria-live="polite"></p>
+            </fieldset>
+
+            <div class="field" data-field="address" hidden>
+              <label for="f-address" data-t="order.address">Adres dostawy</label>
+              <input id="f-address" name="address" type="text" autocomplete="street-address" maxlength="120" aria-describedby="e-address">
+              <p class="field__error" id="e-address" aria-live="polite"></p>
+            </div>
+
+            <div class="field" data-field="date">
+              <label for="f-date" data-t="order.date">Data</label>
+              <input id="f-date" name="date" type="date" required aria-describedby="e-date">
+              <p class="field__error" id="e-date" aria-live="polite"></p>
+            </div>
+
+            <div class="field" data-field="notes">
+              <label for="f-notes" data-t="order.notes">Uwagi (opcjonalnie)</label>
+              <textarea id="f-notes" name="notes" rows="2" maxlength="400" data-t-attr="placeholder:order.notesPh"></textarea>
+            </div>
+
+            <div class="field field--check" data-field="consent">
+              <label class="check">
+                <input type="checkbox" name="consent" required aria-describedby="e-consent">
+                <span data-t="order.consent">Zgadzam się na kontakt w sprawie zamówienia.</span>
+              </label>
+              <p class="field__error" id="e-consent" aria-live="polite"></p>
+            </div>
+
+            <button class="btn btn--accent btn--block" type="submit" id="f-submit" data-t="order.submit" data-track="form-submit-web3forms">Wyślij zamówienie</button>
+
+            <p class="form__or" data-t="order.or">lub napisz od razu</p>
+            <div class="form__messengers">
+              <button class="btn btn--outline-light" type="button" data-send="whatsapp" data-track="form-submit-whatsapp">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.2-3.6A8 8 0 1 1 8 19.1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.5c0 3.4 3 6.5 6.5 6.5l1-1.6-2-1-1 .9a5 5 0 0 1-2.6-2.6l.9-1-1-2z" fill="currentColor"/></svg>
+                <span data-t="order.whatsapp">WhatsApp</span>
+              </button>
+              <button class="btn btn--outline-light" type="button" data-send="telegram" data-track="form-submit-telegram">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.4 3.6 2.9 10.8c-.9.4-.9 1.7.1 2l4.6 1.4 1.8 5.6c.3.8 1.3 1 1.9.4l2.6-2.5 4.8 3.5c.7.5 1.7.1 1.9-.7l3.1-15.4c.2-1-.6-1.8-1.3-1.5zM9.8 14.7l-.5 3.5-1.3-4.2 9.3-6z" fill="currentColor"/></svg>
+                <span data-t="order.telegram">Telegram</span>
+              </button>
+            </div>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="success" id="order-success" tabindex="-1" hidden>
+            <svg class="success__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m15 24.5 6 6 12-13" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3 class="success__title" data-t="order.successTitle">Dziękujemy!</h3>
+            <p id="order-success-text"></p>
+            <p class="success__more" data-t="order.successMore"></p>
+            <div class="form__messengers">
+              <a class="btn btn--outline-light" data-link="whatsapp" href="#" target="_blank" rel="noopener" data-track="success-whatsapp-click">WhatsApp</a>
+              <a class="btn btn--outline-light" data-link="telegram" href="#" target="_blank" rel="noopener" data-track="success-telegram-click">Telegram</a>
+            </div>
+            <button class="link-btn" type="button" id="order-again" data-t="order.again" data-track="form-order-again-click"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LOCATION ===================== -->
+    <section class="section" id="location" aria-labelledby="location-title">
+      <div class="wrap">
+        <p class="scarcity" data-t="location.scarcity">Pieczemy tylko 500 świeżych kawałków dziennie. Gdy się skończą — zamykamy!</p>
+
+        <div class="location">
+          <div class="location__info">
+            <p class="eyebrow" data-t="location.eyebrow">Lokalizacja</p>
+            <h2 class="section__title" id="location-title" data-t="location.title">Znajdziesz nas tutaj</h2>
+            <dl class="details">
+              <div>
+                <dt data-t="location.addressLabel">Adres</dt>
+                <dd><span data-cfg="address"></span><br><span class="muted" data-cfg="district"></span></dd>
+              </div>
+              <div>
+                <dt data-t="location.hoursLabel">Godziny</dt>
+                <dd><span data-cfg="days"></span> <span data-cfg="hours"></span><br><span class="status" data-status></span></dd>
+              </div>
+              <div>
+                <dt data-t="location.contactLabel">Kontakt</dt>
+                <dd><a data-link="phone" href="#" data-cfg="phone" data-track="location-phone-click"></a><br><a data-link="email" href="#" data-cfg="email" data-track="location-email-click"></a></dd>
+              </div>
+            </dl>
+            <div class="location__ctas">
+              <a class="btn btn--dark" data-link="map" href="#" target="_blank" rel="noopener" data-t="location.directions" data-track="location-directions-click">Wyznacz trasę</a>
+              <a class="btn btn--outline" data-link="phone" href="#" data-t="location.call" data-track="location-call-click">Zadzwoń</a>
+            </div>
+          </div>
+          <div class="location__map">
+            <!-- Google Maps embed: src is set from CONFIG.location in script.js (lazy-loaded) -->
+            <iframe id="map-frame" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap footer__grid">
+      <div>
+        <p class="logo logo--footer">CHEESE <span class="logo__amp">&amp;</span> CLOUD</p>
+        <p class="muted" data-t="footer.tagline"></p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="#menu" data-t="nav.menu" data-track="footer-menu-click">Menu</a></li>
+        <li><a href="#order" data-t="nav.order" data-track="footer-order-click">Zamów</a></li>
+        <li><a href="#location" data-t="nav.location" data-track="footer-location-click">Gdzie jesteśmy</a></li>
+      </ul>
+      <div>
+        <p class="footer__label" data-t="footer.follow">Obserwuj nas</p>
+        <div class="socials">
+          <a class="icon-link" data-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram" data-track="footer-instagram-click">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg>
+          </a>
+          <a class="icon-link" data-link="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok" data-track="footer-tiktok-click">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 3c.4 2.4 1.9 4 4.4 4.3v3.3a8 8 0 0 1-4.3-1.3v6.4A5.8 5.8 0 1 1 10.9 10v3.4a2.5 2.5 0 1 0 2.4 2.5V3h3.3z" fill="currentColor"/></svg>
+          </a>
+          <a class="icon-link" data-link="whatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp" data-track="footer-whatsapp-click">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.2-3.6A8 8 0 1 1 8 19.1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.5c0 3.4 3 6.5 6.5 6.5l1-1.6-2-1-1 .9a5 5 0 0 1-2.6-2.6l.9-1-1-2z" fill="currentColor"/></svg>
+          </a>
+          <a class="icon-link" data-link="telegram" href="#" target="_blank" rel="noopener" aria-label="Telegram" data-track="footer-telegram-click">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.4 3.6 2.9 10.8c-.9.4-.9 1.7.1 2l4.6 1.4 1.8 5.6c.3.8 1.3 1 1.9.4l2.6-2.5 4.8 3.5c.7.5 1.7.1 1.9-.7l3.1-15.4c.2-1-.6-1.8-1.3-1.5zM9.8 14.7l-.5 3.5-1.3-4.2 9.3-6z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <p>© <span data-cfg="year">2026</span> <span data-cfg="brand">CHEESE &amp; CLOUD</span>. <span data-t="footer.rights"></span></p>
+      <p><span data-cfg="address"></span></p>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <a class="sticky-cta" href="#order" data-t="sticky" data-track="sticky-order-whole-click">Zamów cały deser</a>
+</body>
+</html>

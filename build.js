@@ -230,6 +230,8 @@ for (const l of LANGS) {
 }
 write('assets/main.js', fs.readFileSync(path.join(ROOT, 'src/main.js'), 'utf8'));
 if (fs.existsSync(path.join(ROOT, 'img'))) fs.cpSync(path.join(ROOT, 'img'), path.join(OUT, 'img'), { recursive: true, filter: (f) => !/README/i.test(f) });
+// Окремий сайт CHEESE & CLOUD: копіюється як є в dist/cheese-and-cloud/
+if (fs.existsSync(path.join(ROOT, 'cheese-and-cloud'))) fs.cpSync(path.join(ROOT, 'cheese-and-cloud'), path.join(OUT, 'cheese-and-cloud'), { recursive: true });
 write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${absUrl('sitemap.xml')}\n`);
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
   LANGS.map((l) => `<url><loc>${absUrl(pagePath(l))}</loc></url>`).join('\n') + '\n</urlset>\n');
