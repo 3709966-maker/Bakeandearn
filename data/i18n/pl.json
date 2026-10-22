@@ -1,0 +1,154 @@
+{
+  "_info": "Teksty po polsku. {deposit}, {leadTime}, {reviews}, {priceFrom} są wstawiane z settings.json.",
+
+  "lang": "pl",
+  "langName": "Polski",
+  "path": "/",
+
+  "metaTitle": "Torty na zamówienie Kraków – Bliscake",
+  "metaDescription": "Torty i desery na zamówienie w Krakowie od {priceFrom} zł/kg. {reviews} opinii w Google. Wyślij zapytanie i poznaj dokładną cenę.",
+
+  "units": { "kg": "kg", "pc": "szt.", "cur": "zł", "per": "/", "from": "od" },
+
+  "nav": { "how": "Jak zamówić", "prices": "Cennik", "faq": "Pytania", "contact": "Kontakt", "cta": "Wycena tortu" },
+
+  "hero": {
+    "eyebrow": "Pracownia cukiernicza · Kraków",
+    "title": "Torty i desery na zamówienie w Krakowie",
+    "lead": "Pieczemy ze świeżych składników na Twoją okazję: urodziny, wesele, chrzciny albo zwykły wieczór z bliskimi. Napisz, czego potrzebujesz, a podamy dokładną cenę.",
+    "cta": "Zamów wycenę",
+    "ctaSecondary": "Napisz na WhatsApp",
+    "facts": [
+      "Torty od <b>{priceFrom} zł</b> za kg",
+      "Zamówienie <b>{leadTime} dni</b> wcześniej",
+      "Odbiór osobisty lub dostawa po Krakowie"
+    ],
+    "reviews": "{reviews} opinii w Google"
+  },
+
+  "gallery": { "title": "Nasze torty", "more": "Więcej tortów na Instagramie" },
+
+  "why": {
+    "title": "Dlaczego my",
+    "items": [
+      { "t": "Świeże, naturalne składniki", "d": "Śmietanka, prawdziwa czekolada, serek i owoce. Bez margaryny i sztucznych aromatów." },
+      { "t": "Cena znana z góry", "d": "Cena za kg jest jawna na stronie. Dekorację wyceniamy przed zamówieniem, bez niespodzianek przy odbiorze." },
+      { "t": "Projekt dla Ciebie", "d": "Odtworzymy pomysł ze zdjęcia albo wymyślimy go razem: od minimalizmu po piętrowe torty weselne." },
+      { "t": "{reviews} opinii w Google", "d": "Zaufały nam setki rodzin w Krakowie. Przeczytaj opinie, zanim zamówisz." }
+    ]
+  },
+
+  "steps": {
+    "title": "Jak zamówić tort",
+    "items": [
+      { "t": "Wyślij zapytanie", "d": "Data, liczba gości, smak i pomysł na dekorację. Możesz dodać zdjęcie inspiracji." },
+      { "t": "Otrzymaj wycenę", "d": "Odpowiemy, uzgodnimy projekt i podamy dokładną cenę z dekoracją." },
+      { "t": "Wpłać zaliczkę", "d": "Zaliczka {deposit} rezerwuje termin. Resztę płacisz przy odbiorze kartą lub gotówką." },
+      { "t": "Odbierz tort", "d": "Odbiór z Białoruskiej 7 lub dostawa taksówką wg taryfy." }
+    ]
+  },
+
+  "calc": {
+    "title": "Jak duży tort?",
+    "lead": "Na jednego gościa liczymy 150–200 g. Wybierz smak i liczbę gości, aby zobaczyć orientacyjną cenę.",
+    "guests": "Liczba gości",
+    "flavor": "Smak",
+    "weight": "Waga tortu",
+    "price": "Orientacyjna cena",
+    "min": "minimalna waga",
+    "tier2": "Można zrobić tort 2-piętrowy",
+    "tier3": "Można zrobić tort 3-piętrowy",
+    "decor": "Bez dekoracji. Dekorację wyceniamy indywidualnie po uzgodnieniu projektu.",
+    "cta": "Wyślij zapytanie z tymi danymi"
+  },
+
+  "prices": {
+    "title": "Cennik",
+    "lead": "Cena tortu zależy od wagi: cena smaku × kilogramy + dekoracja. Minimalna waga jest podana przy każdym smaku.",
+    "rules": [
+      { "t": "Minimalna waga", "d": "Tort od 2 kg, niektóre smaki od 1,5 kg." },
+      { "t": "Porcja", "d": "150–200 g tortu na gościa." },
+      { "t": "Nadwaga", "d": "Liczymy maksymalnie 300 g nadwagi (torty 4–7 kg – 500 g), reszta gratis." }
+    ]
+  },
+
+  "reviews": {
+    "title": "Opinie klientów",
+    "lead": "Nie piszemy opinii sami. Wszystkie są publiczne w Mapach Google.",
+    "cta": "Przeczytaj {reviews} opinii w Google"
+  },
+
+  "faq": {
+    "title": "Częste pytania",
+    "items": [
+      { "q": "Z jakim wyprzedzeniem zamówić tort?", "a": "Zwykle {leadTime} dni wcześniej. Na wesela i duże uroczystości najlepiej zarezerwować termin kilka tygodni wcześniej. Jeśli potrzebujesz pilnie, napisz – czasem mamy wolne miejsca." },
+      { "q": "Ile kosztuje tort z dekoracją?", "a": "Cena = waga × cena smaku + dekoracja. Na przykład tort 2,5 kg „Malinowy”: 2,5 × 130 = 325 zł plus dekoracja. Dekoracja zależy od stopnia trudności, dlatego dokładną cenę podajemy po zobaczeniu pomysłu." },
+      { "q": "Jaką wagę tortu wybrać?", "a": "150–200 g na gościa. Dla 15 gości to 2,3–3 kg. Na wesele wystarczy około 150 g na osobę, bo są też inne desery. Skorzystaj z kalkulatora powyżej." },
+      { "q": "Jak działa zaliczka?", "a": "Po uzgodnieniu projektu i ceny wpłacasz zaliczkę {deposit} przelewem. Rezerwuje ona termin. Resztę płacisz przy odbiorze kartą lub gotówką." },
+      { "q": "Czy można zmienić lub anulować zamówienie?", "a": "Szczegóły projektu można zmieniać, dopóki nie zaczęliśmy pracy. Jeśli plany się zmieniły, napisz jak najwcześniej, a znajdziemy rozwiązanie." },
+      { "q": "Czy jest dostawa?", "a": "Odbiór osobisty: Plac targowy „Manhattan”, Białoruska 7, pawilon 12. Możemy też wysłać tort taksówką po Krakowie wg taryfy." },
+      { "q": "Czy możecie zrobić tort ze zdjęcia?", "a": "Tak. Wyślij zdjęcie inspiracji, a powiemy, co da się zrobić i ile to będzie kosztować. Nie kopiujemy tortów jeden do jednego, robimy je w naszym stylu." },
+      { "q": "Czy uwzględniacie alergie?", "a": "Napisz o alergiach w zapytaniu. Torty mogą zawierać orzechy, mleko, jaja i gluten. Doradzimy odpowiednie smaki." },
+      { "q": "Jak przewozić i przechowywać tort?", "a": "Trzymaj pudełko od spodu i przewoź na płaskiej powierzchni (podłoga auta lub bagażnik, latem z klimatyzacją). Przechowuj w lodówce i wyjmij 20–30 minut przed podaniem. Kroić długim, podgrzanym nożem." },
+      { "q": "Czy wystawiacie fakturę?", "a": "Tak, podaj dane do faktury w zapytaniu lub wiadomości." }
+    ]
+  },
+
+  "form": {
+    "title": "Zapytanie o wycenę",
+    "lead": "Wypełnij to, co wiesz. Odpowiemy z dokładną ceną i propozycją projektu. To bezpłatne i niezobowiązujące.",
+    "name": "Imię",
+    "phone": "Telefon",
+    "contactVia": "Jak się z Tobą skontaktować?",
+    "contactOptions": ["WhatsApp", "Telegram", "Telefon", "Instagram", "Email"],
+    "date": "Data uroczystości",
+    "product": "Co chcesz zamówić?",
+    "productOptions": ["Tort", "Tort weselny", "Bento tort", "Tort musowy", "Sernik", "Babeczki", "Słodki stół / desery", "Jeszcze nie wiem"],
+    "guests": "Liczba gości lub waga",
+    "flavor": "Smak",
+    "flavorAny": "Doradźcie mi",
+    "design": "Pomysł na dekorację",
+    "designPh": "Kolor, napis, motyw, link do zdjęcia inspiracji…",
+    "delivery": "Odbiór",
+    "deliveryOptions": ["Odbiór osobisty", "Dostawa taksówką"],
+    "consent": "Zgadzam się na przetwarzanie danych w celu odpowiedzi na zapytanie.",
+    "privacy": "Polityka prywatności",
+    "submit": "Wyślij zapytanie",
+    "sending": "Wysyłanie…",
+    "note": "Zdjęcie inspiracji najwygodniej wysłać na WhatsApp lub Instagram po wysłaniu zapytania.",
+    "okTitle": "Dziękujemy! Zapytanie dotarło.",
+    "okText": "Odpowiemy najszybciej, jak to możliwe. Chcesz szybciej? Wyślij zdjęcie inspiracji na WhatsApp.",
+    "err": "Nie udało się wysłać. Napisz do nas na WhatsApp.",
+    "required": "Podaj imię, telefon i datę.",
+    "waIntro": "Dzień dobry! Zapytanie o wycenę ze strony:"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "phone": "Telefon / WhatsApp",
+    "email": "Email",
+    "address": "Adres odbioru",
+    "social": "Social media",
+    "map": "Otwórz w Mapach Google"
+  },
+
+  "footer": { "rights": "Wszelkie prawa zastrzeżone.", "privacy": "Polityka prywatności", "cookies": "Ustawienia cookies" },
+
+  "consent": {
+    "text": "Używamy cookies do statystyk i reklam, aby ulepszać stronę. Możesz się zgodzić lub odmówić.",
+    "accept": "Akceptuję",
+    "reject": "Tylko niezbędne"
+  },
+
+  "privacyPage": {
+    "title": "Polityka prywatności",
+    "body": [
+      "Administrator danych: {company}, NIP {nip}, REGON {regon}, {address}. Kontakt: {email}.",
+      "Dane z formularza (imię, telefon, data, życzenia) wykorzystujemy wyłącznie do odpowiedzi na zapytanie i realizacji zamówienia (art. 6 ust. 1 lit. b RODO). Przechowujemy je tak długo, jak wymaga tego zamówienie i przepisy księgowe.",
+      "Formularz może być wysyłany przez usługę doręczania wiadomości (Web3Forms) lub otwierać WhatsApp. Nie sprzedajemy danych i nie przekazujemy ich innym firmom do celów marketingowych.",
+      "Cookies statystyczne (Google Analytics) i reklamowe (Meta Pixel) włączają się dopiero po Twojej zgodzie. Decyzję możesz zmienić w każdej chwili przez link „Ustawienia cookies” w stopce.",
+      "Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz skargi do Prezesa UODO. Napisz do nas na email."
+    ],
+    "back": "Strona główna"
+  }
+}

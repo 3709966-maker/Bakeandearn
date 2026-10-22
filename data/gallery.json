@@ -1,0 +1,17 @@
+{
+  "_info": "Фото. Покладіть файли в папку img/ з такими назвами. Фото, якого немає в папці, просто не показується. Рекомендовано: JPG або WEBP, ширина 1000–1200 px, до 200 КБ. hero – головне фото вгорі сторінки.",
+
+  "hero": { "src": "hero.jpg",
+    "alt": { "uk": "Торт Bliscake", "pl": "Tort Bliscake", "en": "Bliscake cake" } },
+
+  "photos": [
+    { "src": "cake-01.jpg", "alt": { "uk": "Торт на день народження", "pl": "Tort urodzinowy", "en": "Birthday cake" } },
+    { "src": "cake-02.jpg", "alt": { "uk": "Весільний торт", "pl": "Tort weselny", "en": "Wedding cake" } },
+    { "src": "cake-03.jpg", "alt": { "uk": "Дитячий торт", "pl": "Tort dla dziecka", "en": "Kids' cake" } },
+    { "src": "cake-04.jpg", "alt": { "uk": "Бенто-торт", "pl": "Bento tort", "en": "Bento cake" } },
+    { "src": "cake-05.jpg", "alt": { "uk": "Торт у розрізі", "pl": "Przekrój tortu", "en": "Cake cross-section" } },
+    { "src": "cake-06.jpg", "alt": { "uk": "Капкейки", "pl": "Babeczki", "en": "Cupcakes" } },
+    { "src": "cake-07.jpg", "alt": { "uk": "Мусовий торт", "pl": "Tort musowy", "en": "Mousse cake" } },
+    { "src": "cake-08.jpg", "alt": { "uk": "Солодкий стіл", "pl": "Słodki stół", "en": "Sweet table" } }
+  ]
+}

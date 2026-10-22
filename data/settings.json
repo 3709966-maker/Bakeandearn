@@ -1,0 +1,45 @@
+{
+  "_info": "Основні налаштування сайту. Змінюйте лише значення праворуч від двокрапки, лапки залишайте.",
+
+  "siteUrl": "https://bliscake.com",
+  "customDomain": "",
+  "brand": "Bliscake",
+
+  "phone": "+48 886 274 016",
+  "whatsapp": "48886274016",
+  "telegram": "",
+  "email": "anilllbb@gmail.com",
+  "instagram": "https://www.instagram.com/tort_bliss/",
+  "instagramHandle": "@tort_bliss",
+  "facebook": "https://www.facebook.com/bliscake",
+
+  "address": {
+    "street": "Białoruska 7, pawilon 12",
+    "place": "Plac targowy „Manhattan”",
+    "postalCode": "30-638",
+    "city": "Kraków"
+  },
+  "mapsUrl": "https://share.google/TGQ0oJSTBqC998521",
+  "reviewsUrl": "https://share.google/TGQ0oJSTBqC998521",
+  "reviewsCount": "100+",
+  "rating": "",
+
+  "deposit": "50%",
+  "leadTime": "2–7",
+  "priceFrom": 120,
+
+  "company": {
+    "name": "HANNA BURIAK BLISSCAKE",
+    "nip": "6793257227",
+    "regon": "524139809"
+  },
+
+  "_tracking": "Вставте ID і перезберіть сайт. Рекомендовано: тільки gtmId, а GA4 і Meta Pixel налаштувати всередині GTM. Якщо GTM не використовуєте, заповніть ga4Id і metaPixelId.",
+  "gtmId": "",
+  "ga4Id": "",
+  "metaPixelId": "",
+
+  "_form": "Куди надсилати заявки. Порожньо: заявка відкривається в WhatsApp. Для листів на пошту: зареєструйтесь на web3forms.com і вставте ключ у formAccessKey.",
+  "formEndpoint": "https://api.web3forms.com/submit",
+  "formAccessKey": ""
+}

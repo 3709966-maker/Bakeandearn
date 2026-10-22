@@ -1,0 +1,326 @@
+{
+  "_info": "Прайс. Щоб змінити ціну, змініть число в полі price. unit: kg = за кг, pc = за штуку, порожньо = за виріб. min = мінімальна вага в кг. Для нової позиції скопіюйте блок {...} разом із комою.",
+
+  "categories": [
+    {
+      "id": "cakes",
+      "title": { "uk": "Торти", "pl": "Torty", "en": "Cakes" },
+      "note": {
+        "uk": "Ціна за 1 кг. Декор рахується окремо, індивідуально.",
+        "pl": "Cena za 1 kg. Dekoracja liczona osobno, indywidualnie.",
+        "en": "Price per 1 kg. Decoration is priced separately."
+      },
+      "calculator": true,
+      "items": [
+        { "price": 120, "unit": "kg", "min": "2,2",
+          "name": { "uk": "Медовик", "pl": "Miodownik", "en": "Honey cake" },
+          "desc": {
+            "uk": "М’які медові коржі, ніжний вершковий крем і кисленька вишня (або полуниця). Не дуже солодкий, легкий.",
+            "pl": "Miękkie miodowe blaty, delikatny krem śmietankowy i soczyste wiśnie (lub truskawki). Niezbyt słodki, lekki.",
+            "en": "Soft honey layers, delicate cream and tart cherries (or strawberries). Light and not too sweet."
+          } },
+        { "price": 120, "unit": "kg", "min": "2,2",
+          "name": { "uk": "Наполеон", "pl": "Napoleon", "en": "Napoleon" },
+          "desc": {
+            "uk": "Листкові коржі з заварним кремом на згущеному молоці. Прямокутний, оформлений крихтою і ягодами.",
+            "pl": "Cienkie ciasto francuskie i krem ze skondensowanym mlekiem i masłem. Prostokątny, z okruchami i sezonowymi owocami.",
+            "en": "Thin puff pastry layers with custard and condensed milk cream. Rectangular, topped with crumbs and berries."
+          } },
+        { "price": 130, "unit": "kg", "min": "1,5",
+          "name": { "uk": "Трюфель", "pl": "Trufle", "en": "Truffle" },
+          "desc": {
+            "uk": "Повітряні шоколадні коржі та крем на темному шоколаді. Дуже шоколадний.",
+            "pl": "Czekoladowe biszkopty i krem z ciemnej czekolady. Bardzo czekoladowy.",
+            "en": "Airy chocolate sponge and dark chocolate cream. Seriously chocolatey."
+          } },
+        { "price": 130, "unit": "kg", "min": "1,5",
+          "name": { "uk": "Торт-цифра, серце, ялинка", "pl": "Tort w kształcie cyfry, serca, choinki", "en": "Number / heart / tree shaped cake" },
+          "desc": {
+            "uk": "Ніжні медові коржі, вершковий крем і ягідне конфі.",
+            "pl": "Delikatne ciasto miodowe, krem śmietankowy z serkiem, konfitura jagodowa.",
+            "en": "Tender honey layers, cream and berry confit."
+          } },
+        { "price": 130, "unit": "kg", "min": "1,5–1,8",
+          "name": { "uk": "Вишня-шоколад", "pl": "Wiśnia-czekolada", "en": "Cherry & chocolate" },
+          "desc": {
+            "uk": "Шоколадні коржі з сиропом, крем на чорному шоколаді та вершковому сирі, прошарок вишні.",
+            "pl": "Czekoladowe biszkopty nasączone syropem, krem z ciemnej czekolady i serka, warstwa wiśni.",
+            "en": "Chocolate sponge soaked in syrup, dark chocolate cream cheese frosting and a cherry layer."
+          } },
+        { "price": 130, "unit": "kg", "min": "2,3",
+          "name": { "uk": "Ніжність", "pl": "Delikatność", "en": "Tenderness" },
+          "desc": {
+            "uk": "Шоколадні бісквіти, крем-чиз з вишнею і шоколадний ганаш.",
+            "pl": "Czekoladowe biszkopty, krem z serkiem i wiśniami, czekoladowy ganache.",
+            "en": "Chocolate sponge, cream cheese with cherries and chocolate ganache."
+          } },
+        { "price": 130, "unit": "kg", "min": "1,5–1,8",
+          "name": { "uk": "Снікерс", "pl": "Snickers", "en": "Snickers" },
+          "desc": {
+            "uk": "Шоколадний бісквіт, ганаш, солона карамель з арахісом, крем з арахісовою пастою.",
+            "pl": "Czekoladowy biszkopt, ganache, solony karmel z orzeszkami, krem z pastą orzechową.",
+            "en": "Chocolate sponge, ganache, salted caramel with peanuts and peanut butter cream."
+          } },
+        { "price": 130, "unit": "kg", "min": "1,5–1,8",
+          "name": { "uk": "Полуничний", "pl": "Truskawkowy", "en": "Strawberry" },
+          "desc": {
+            "uk": "Ванільні коржі, полуничне конфі, полуничний ганаш і крем-чиз. Улюблений смак дітей.",
+            "pl": "Waniliowe biszkopty, konfitura i ganache truskawkowy, delikatny krem. Ulubiony smak dzieci.",
+            "en": "Vanilla sponge, strawberry confit and ganache, cream cheese frosting. Kids love it."
+          } },
+        { "price": 130, "unit": "kg", "min": "2,3",
+          "name": { "uk": "Лате", "pl": "Latte", "en": "Latte" },
+          "desc": {
+            "uk": "Ванільні бісквіти, крем-чиз, кавова карамель і чизкейк на білому шоколаді.",
+            "pl": "Waniliowy biszkopt, krem, kawowy karmel i sernik na białej czekoladzie.",
+            "en": "Vanilla sponge, cream cheese, coffee caramel and white chocolate cheesecake."
+          } },
+        { "price": 130, "unit": "kg", "min": "2,3",
+          "name": { "uk": "Манго-полуниця", "pl": "Mango-truskawka", "en": "Mango & strawberry" },
+          "desc": {
+            "uk": "Бісквіт на білому шоколаді, крем-чиз, манговий мус і полуничне конфі.",
+            "pl": "Biszkopt na białej czekoladzie, krem, mus z mango, konfitura truskawkowa.",
+            "en": "White chocolate sponge, cream cheese, mango mousse and strawberry confit."
+          } },
+        { "price": 130, "unit": "kg", "min": "2,3",
+          "name": { "uk": "Орео", "pl": "Oreo", "en": "Oreo" },
+          "desc": {
+            "uk": "Два шоколадні бісквіти, запечений чизкейк з орео і крем з крихтою орео.",
+            "pl": "Dwa czekoladowe biszkopty, pieczony sernik z Oreo i krem z kruszonką Oreo.",
+            "en": "Two chocolate sponges, baked Oreo cheesecake and Oreo crumb cream."
+          } },
+        { "price": 130, "unit": "kg", "min": "2,2",
+          "name": { "uk": "Малиновий", "pl": "Malinowy", "en": "Raspberry" },
+          "desc": {
+            "uk": "Ванільні бісквіти, вершково-сирний крем, малинове конфі і малиновий ганаш. З кислинкою.",
+            "pl": "Waniliowe biszkopty, krem śmietankowo-serowy, malinowe confit i ganache. Z nutą kwaskowatości.",
+            "en": "Vanilla sponge, cream cheese, raspberry confit and ganache. Pleasantly tart."
+          } },
+        { "price": 130, "unit": "kg", "min": "2,3",
+          "name": { "uk": "Шоколад-манго-маракуйя", "pl": "Czekolada-mango-marakuja", "en": "Chocolate, mango & passion fruit" },
+          "desc": {
+            "uk": "Шоколадні бісквіти, крем на темному шоколаді з прошарками крему з манго і маракуйї.",
+            "pl": "Czekoladowe biszkopty, krem z ciemnej czekolady z warstwami kremu z mango i marakui.",
+            "en": "Chocolate sponge, dark chocolate cream with mango and passion fruit layers."
+          } },
+        { "price": 130, "unit": "kg", "min": "2,5",
+          "name": { "uk": "Малина-шоколад", "pl": "Malina i czekolada", "en": "Raspberry & chocolate" },
+          "desc": {
+            "uk": "Шоколадні коржі, два прошарки малини і шоколадний крем у ніжному крем-чизі.",
+            "pl": "Dwie warstwy malin i krem czekoladowy w delikatnym kremie z serkiem.",
+            "en": "Chocolate layers, two raspberry layers and chocolate cream, finished with cream cheese."
+          } },
+        { "price": 140, "unit": "kg", "min": "2,5",
+          "name": { "uk": "Фісташка-малина", "pl": "Pistacja-malina", "en": "Pistachio & raspberry" },
+          "desc": {
+            "uk": "Фісташковий бісквіт і крем, малинове конфі, малинова намелака, фісташковий мус.",
+            "pl": "Biszkopt pistacjowy, konfitura malinowa, namelaka malinowa, krem pistacjowy.",
+            "en": "Pistachio sponge and cream, raspberry confit, raspberry namelaka."
+          } },
+        { "price": 140, "unit": "kg", "min": "1,5–1,8",
+          "name": { "uk": "Рафаело", "pl": "Raffaello", "en": "Raffaello" },
+          "desc": {
+            "uk": "Ванільні бісквіти, кокосовий крем на білому шоколаді, хрусткий прошарок з мигдалем.",
+            "pl": "Biszkopty nasączone syropem, krem kokosowy na białej czekoladzie, chrupiąca warstwa z migdałami.",
+            "en": "Vanilla sponge, coconut white chocolate cream and a crunchy almond layer."
+          } },
+        { "price": 140, "unit": "kg", "min": "1,5–1,8",
+          "name": { "uk": "Ферреро Роше", "pl": "Ferrero Rocher", "en": "Ferrero Rocher" },
+          "desc": {
+            "uk": "Шоколадні бісквіти, шоколадний крем, хрусткий прошарок з фундуком і вафлею.",
+            "pl": "Czekoladowe biszkopty, krem czekoladowy, chrupiąca warstwa z orzechów laskowych i wafelków.",
+            "en": "Chocolate sponge, chocolate cream and a crunchy hazelnut wafer layer."
+          } },
+        { "price": 140, "unit": "kg", "min": "2,5",
+          "name": { "uk": "Ягідний", "pl": "Jagodowy", "en": "Berry" },
+          "note": { "uk": "не для ярусних тортів", "pl": "nie do tortów piętrowych", "en": "not for tiered cakes" },
+          "desc": {
+            "uk": "Ванільні бісквіти, конфі з полуниці й малини, ягідний мус, вершковий крем.",
+            "pl": "Waniliowe biszkopty, konfitura truskawkowo-malinowa, mus jagodowy, krem śmietankowy.",
+            "en": "Vanilla sponge, strawberry-raspberry confit, berry mousse and cream."
+          } },
+        { "price": 140, "unit": "kg", "min": "2,2",
+          "name": { "uk": "Полуниця-пармезан", "pl": "Truskawka-parmezan", "en": "Strawberry & parmesan" },
+          "desc": {
+            "uk": "Бісквіти на білому шоколаді, ніжний мус з пармезаном і полуничний чизкейк.",
+            "pl": "Biszkopty na białej czekoladzie, delikatny mus z parmezanem, sernik truskawkowy.",
+            "en": "White chocolate sponge, delicate parmesan mousse and strawberry cheesecake."
+          } },
+        { "price": 140, "unit": "kg", "min": "2,5",
+          "name": { "uk": "Червоний оксамит", "pl": "Red velvet", "en": "Red velvet" },
+          "desc": {
+            "uk": "Червоний бісквіт з какао, полуничний чизкейк, полуничне конфі і крем-чиз.",
+            "pl": "Czerwony biszkopt z kakao, sernik truskawkowy, truskawkowe confit, krem.",
+            "en": "Red cocoa sponge, strawberry cheesecake, strawberry confit and cream cheese."
+          } }
+      ]
+    },
+
+    {
+      "id": "mousse",
+      "title": { "uk": "Мусові торти", "pl": "Torty musowe", "en": "Mousse cakes" },
+      "note": {
+        "uk": "Ціна за торт, залежить від форми. Смаки: морква-апельсин, пломбір-малина, шоколад-апельсин, вишня-брауні, полуниця-пармезан, фісташка-малина.",
+        "pl": "Cena za tort, zależy od formy. Smaki: marchewka-pomarańcza, plombir-malina, czekolada-pomarańcza, wiśniowe brownie, truskawka-parmezan, pistacja-malina.",
+        "en": "Price per cake, depends on the shape. Flavours: carrot-orange, vanilla ice cream & raspberry, chocolate-orange, cherry brownie, strawberry-parmesan, pistachio-raspberry."
+      },
+      "items": [
+        { "price": 200, "weight": "1,3–1,5 kg",
+          "name": { "uk": "Форма «Хмаринка»", "pl": "Forma „chmurka”", "en": "Cloud shape" } },
+        { "price": 220, "weight": "1,3–1,5 kg",
+          "name": { "uk": "Форма «Квадрат»", "pl": "Forma kwadratowa", "en": "Square shape" } },
+        { "price": 220, "weight": "1,5 kg",
+          "name": { "uk": "Форма «Круг»", "pl": "Forma okrągła", "en": "Round shape" } },
+        { "price": 160, "weight": "0,8–0,9 kg",
+          "name": { "uk": "Торт «Сердечко»", "pl": "Tort „Serce”", "en": "Heart cake" } }
+      ]
+    },
+
+    {
+      "id": "cheesecakes",
+      "title": { "uk": "Чизкейки", "pl": "Serniki", "en": "Cheesecakes" },
+      "note": { "uk": "Ціна за весь чизкейк.", "pl": "Cena za cały sernik.", "en": "Price per whole cheesecake." },
+      "items": [
+        { "price": 170, "weight": "1,5–1,7 kg",
+          "name": { "uk": "Нью-Йорк", "pl": "New York", "en": "New York" },
+          "desc": {
+            "uk": "Пісочна основа, запечений вершковий сир, домашня карамель (або шоколадний ганаш).",
+            "pl": "Kruchy spód, zapiekany serek śmietankowy, domowy karmel (lub ganache czekoladowy).",
+            "en": "Shortbread base, baked cream cheese, homemade caramel (or chocolate ganache)."
+          } },
+        { "price": 170, "weight": "1,4–1,5 kg",
+          "name": { "uk": "Вишневий", "pl": "Wiśniowy", "en": "Cherry" },
+          "desc": {
+            "uk": "Шоколадне сабле, запечений сир, вишневе компоте і крем шантильї.",
+            "pl": "Czekoladowy spód, zapiekana warstwa serowa, kompot wiśniowy i krem chantilly.",
+            "en": "Chocolate sablé, baked cheese layer, cherry compote and chantilly cream."
+          } },
+        { "price": 190, "weight": "1,7–1,9 kg",
+          "name": { "uk": "Снікерс", "pl": "Snickers", "en": "Snickers" },
+          "desc": {
+            "uk": "Шоколадне сабле, сир з арахісовою пастою, карамель з арахісом, молочний шоколад.",
+            "pl": "Czekoladowy spód, masa serowa z pastą orzechową, karmel z orzeszkami, mleczna czekolada.",
+            "en": "Chocolate sablé, peanut butter cheese layer, peanut caramel, milk chocolate."
+          } },
+        { "price": 200, "weight": "1,5–1,7 kg",
+          "name": { "uk": "Йогуртовий з манго", "pl": "Jogurtowy z mango", "en": "Yoghurt & mango" },
+          "desc": {
+            "uk": "Крамбл, мангове компоте, йогуртовий мус і шматочки манго. Легкий.",
+            "pl": "Kruszonka, kompot z mango, mus jogurtowy i kawałki mango. Lekki.",
+            "en": "Crumble, mango compote, yoghurt mousse and mango pieces. Light."
+          } },
+        { "price": 200, "weight": "1,5 kg",
+          "name": { "uk": "Шоколад-манго-маракуйя", "pl": "Czekolada-mango-marakuja", "en": "Chocolate, mango & passion fruit" } },
+        { "price": 250, "weight": "1,5 kg",
+          "name": { "uk": "Лайм-кокос", "pl": "Limonka-kokos", "en": "Lime & coconut" },
+          "desc": {
+            "uk": "Крамбл з лаймом і кокосом, кокосовий дакуаз, запечений сир, лаймовий гель. Освіжаючий.",
+            "pl": "Kruszonka z limonką i kokosem, dacquoise kokosowe, warstwa serowa, żel limonkowy. Orzeźwiający.",
+            "en": "Lime-coconut crumble, coconut dacquoise, baked cheese, lime gel. Refreshing."
+          } }
+      ]
+    },
+
+    {
+      "id": "bento",
+      "title": { "uk": "Бенто-торти", "pl": "Bento torty", "en": "Bento cakes" },
+      "note": {
+        "uk": "Близько 1 кг, діаметр 14 см, на 4–6 осіб. Простий дизайн: посипка, напис або картинка. Смаки: снікерс, вишня-шоколад, полуничний, вишневий, екзотик.",
+        "pl": "Około 1 kg, średnica 14 cm, dla 4–6 osób. Prosty wzór: posypka, napis lub obrazek. Smaki: snickers, wiśnia-czekolada, truskawka, wanilia-wiśnia, egzotyczny.",
+        "en": "About 1 kg, 14 cm, serves 4–6. Simple design: sprinkles, lettering or a picture. Flavours: snickers, cherry-chocolate, strawberry, vanilla-cherry, exotic."
+      },
+      "items": [
+        { "price": 150, "name": { "uk": "Бенто-торт", "pl": "Bento tort", "en": "Bento cake" } },
+        { "price": 160, "name": { "uk": "Бенто «Ферреро Роше»", "pl": "Bento Ferrero Rocher", "en": "Bento Ferrero Rocher" } }
+      ]
+    },
+
+    {
+      "id": "cupcakes",
+      "title": { "uk": "Капкейки", "pl": "Babeczki", "en": "Cupcakes" },
+      "note": {
+        "uk": "З декором з ягід і солодощів, у гарній коробці. Один смак на 6 штук.",
+        "pl": "Z dekoracją z owoców i słodyczy, w eleganckim pudełku. Jeden smak na 6 sztuk.",
+        "en": "Decorated with berries and sweets, in a gift box. One flavour per 6 pieces."
+      },
+      "items": [
+        { "price": 15, "unit": "pc", "name": { "uk": "1 капкейк", "pl": "1 babeczka", "en": "1 cupcake" },
+          "note": { "uk": "від 30 шт. – 14 зл/шт.", "pl": "od 30 szt. – 14 zł/szt.", "en": "from 30 pcs – 14 zł each" } },
+        { "price": 95, "name": { "uk": "6 штук", "pl": "6 sztuk", "en": "6 pieces" } },
+        { "price": 135, "name": { "uk": "9 штук", "pl": "9 sztuk", "en": "9 pieces" } },
+        { "price": 165, "name": { "uk": "12 штук", "pl": "12 sztuk", "en": "12 pieces" } },
+        { "price": 3, "unit": "pc", "prefix": "+",
+          "name": { "uk": "Напис або картинка", "pl": "Napis lub obrazek", "en": "Lettering or picture" } }
+      ]
+    },
+
+    {
+      "id": "macarons",
+      "title": { "uk": "Макарон і моті", "pl": "Makaroniki i mochi", "en": "Macarons & mochi" },
+      "note": {
+        "uk": "Від 40 шт. макарон ціна договірна. Моті від 2 шт.",
+        "pl": "Od 40 szt. makaroników cena do negocjacji. Mochi od 2 szt.",
+        "en": "Macarons: price negotiable from 40 pcs. Mochi from 2 pcs."
+      },
+      "items": [
+        { "price": 9, "unit": "pc", "name": { "uk": "Макарон", "pl": "Makaroniki", "en": "Macarons" },
+          "desc": {
+            "uk": "Лимон, полуниця з вершками, баунті, смородина, кава, манго-маракуйя, шоколад-апельсин, лайм-м’ята, снікерс, фісташка, фісташка-малина.",
+            "pl": "Cytryna, truskawka z bitą śmietaną, bounty, czarna porzeczka, kawa, mango-marakuja, czekolada-pomarańcza, limonka-mięta, snickers, pistacja, pistacja-malina.",
+            "en": "Lemon, strawberries & cream, bounty, blackcurrant, coffee, mango-passion fruit, chocolate-orange, lime-mint, snickers, pistachio, pistachio-raspberry."
+          } },
+        { "price": 11, "unit": "pc", "name": { "uk": "Дубайські макарон", "pl": "Dubajskie makaroniki", "en": "Dubai macarons" } },
+        { "price": 10, "unit": "pc", "name": { "uk": "Моті", "pl": "Mochi", "en": "Mochi" },
+          "desc": {
+            "uk": "Полуниця, фісташка-малина, шоколад-карамель, манго-маракуйя, смородина, фісташка, орео, рафаело.",
+            "pl": "Truskawka, pistacja-malina, czekolada-karmel, mango-marakuja, czarna porzeczka, pistacja, Oreo, raffaello.",
+            "en": "Strawberry, pistachio-raspberry, chocolate-caramel, mango-passion fruit, blackcurrant, pistachio, Oreo, raffaello."
+          } }
+      ]
+    },
+
+    {
+      "id": "sweets",
+      "title": { "uk": "Десерти та солодкий стіл", "pl": "Desery i słodki stół", "en": "Desserts & sweet table" },
+      "note": {
+        "uk": "Поштучні десерти – від 10 шт., якщо не вказано інше.",
+        "pl": "Desery na sztuki – od 10 szt., jeśli nie podano inaczej.",
+        "en": "Individual desserts – from 10 pcs unless stated otherwise."
+      },
+      "items": [
+        { "price": 150, "name": { "uk": "Десерт «Павлова», 6 шт.", "pl": "Deser Pavlova, 6 szt.", "en": "Pavlova, 6 pcs" } },
+        { "price": 150, "weight": "1,3 kg", "name": { "uk": "Меренговий рулет", "pl": "Rolada bezowa", "en": "Meringue roulade" } },
+        { "price": 70, "weight": "200 g", "name": { "uk": "Дубайський шоколад", "pl": "Dubajska czekolada", "en": "Dubai chocolate" } },
+        { "price": 24, "unit": "pc", "name": { "uk": "Десерт у стаканчику", "pl": "Słodki kubek", "en": "Dessert cup" } },
+        { "price": 20, "unit": "pc", "name": { "uk": "Монопорційні тістечка", "pl": "Monoporcje", "en": "Individual entremets" } },
+        { "price": 19, "unit": "pc", "name": { "uk": "Чизкейк на паличці", "pl": "Sernik na patyku", "en": "Cheesecake on a stick" } },
+        { "price": 9, "unit": "pc", "name": { "uk": "Вафельні трубочки зі згущеним молоком", "pl": "Rurki z kajmakiem", "en": "Wafer rolls with dulce de leche" } },
+        { "price": 8, "unit": "pc", "name": { "uk": "Зефір", "pl": "Zefir", "en": "Zefir (marshmallow)" } },
+        { "price": 7, "unit": "pc", "name": { "uk": "Кейкпопси", "pl": "Cake pops", "en": "Cake pops" } },
+        { "price": 7, "unit": "pc", "name": { "uk": "Ескімо", "pl": "Ice pops", "en": "Ice pops" } },
+        { "price": 7, "unit": "pc", "name": { "uk": "Мадлен", "pl": "Madlenki", "en": "Madeleines" } },
+        { "price": 6, "unit": "pc", "name": { "uk": "Безе", "pl": "Bezy", "en": "Meringues" } },
+        { "price": 4, "unit": "pc", "name": { "uk": "Пташине молоко", "pl": "Ptasie mleczko", "en": "Ptasie mleczko" },
+          "note": { "uk": "від 20 шт.", "pl": "od 20 szt.", "en": "from 20 pcs" } },
+        { "price": 3, "unit": "pc", "name": { "uk": "Льодяники", "pl": "Lizaki", "en": "Lollipops" } }
+      ]
+    },
+
+    {
+      "id": "extras",
+      "title": { "uk": "Ярусні торти та доплати", "pl": "Torty piętrowe i dopłaty", "en": "Tiered cakes & extras" },
+      "items": [
+        { "priceText": { "uk": "за вагою", "pl": "wg wagi", "en": "by weight" },
+          "name": { "uk": "Торт на 2 яруси", "pl": "Tort 2-piętrowy", "en": "2-tier cake" },
+          "note": { "uk": "від 5 кг · ~25–30 осіб", "pl": "od 5 kg · ~25–30 osób", "en": "from 5 kg · ~25–30 guests" } },
+        { "priceText": { "uk": "за вагою", "pl": "wg wagi", "en": "by weight" },
+          "name": { "uk": "Торт на 3 яруси", "pl": "Tort 3-piętrowy", "en": "3-tier cake" },
+          "note": { "uk": "від 8,5 кг · ~50–60 осіб", "pl": "od 8,5 kg · ~50–60 osób", "en": "from 8.5 kg · ~50–60 guests" } },
+        { "price": 25, "unit": "kg", "prefix": "+",
+          "name": { "uk": "Велюрове покриття", "pl": "Powłoka welurowa", "en": "Velvet spray finish" } },
+        { "priceText": { "uk": "індивідуально", "pl": "indywidualnie", "en": "individually" },
+          "name": { "uk": "Декор (квіти, фігурки, топери, ягоди)", "pl": "Dekoracja (kwiaty, figurki, topery, owoce)", "en": "Decoration (flowers, figures, toppers, fruit)" } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "_info": "English texts. {deposit}, {leadTime}, {reviews}, {priceFrom} come from settings.json.",
+
+  "lang": "en",
+  "langName": "English",
+  "path": "/en/",
+
+  "metaTitle": "Custom cakes in Kraków – Bliscake",
+  "metaDescription": "Custom cakes and desserts in Kraków from {priceFrom} zł/kg. {reviews} Google reviews. Send a request and get an exact quote.",
+
+  "units": { "kg": "kg", "pc": "pc", "cur": "zł", "per": "/", "from": "from" },
+
+  "nav": { "how": "How to order", "prices": "Prices", "faq": "FAQ", "contact": "Contact", "cta": "Get a quote" },
+
+  "hero": {
+    "eyebrow": "Cake studio · Kraków",
+    "title": "Custom cakes and desserts in Kraków",
+    "lead": "Made from fresh ingredients for your occasion: birthday, wedding, christening or a cosy evening with family. Tell us what you'd like and we'll send an exact price.",
+    "cta": "Get a quote",
+    "ctaSecondary": "Message on WhatsApp",
+    "facts": [
+      "Cakes from <b>{priceFrom} zł</b> per kg",
+      "Order <b>{leadTime} days</b> ahead",
+      "Pickup or delivery in Kraków"
+    ],
+    "reviews": "{reviews} Google reviews"
+  },
+
+  "gallery": { "title": "Our cakes", "more": "More cakes on Instagram" },
+
+  "why": {
+    "title": "Why Bliscake",
+    "items": [
+      { "t": "Fresh, natural ingredients", "d": "Cream, real chocolate, cream cheese and fruit. No margarine or artificial flavourings." },
+      { "t": "Clear prices", "d": "Price per kg is listed on the site. Decoration is quoted before you order, so no surprises at pickup." },
+      { "t": "Designed for you", "d": "We'll recreate an idea from a photo or create one together: from minimal to tiered wedding cakes." },
+      { "t": "{reviews} Google reviews", "d": "Hundreds of families in Kraków trust us. Read the reviews before you order." }
+    ]
+  },
+
+  "steps": {
+    "title": "How to order",
+    "items": [
+      { "t": "Send a request", "d": "Date, number of guests, flavour and design ideas. You can add an inspiration photo." },
+      { "t": "Get your quote", "d": "We reply, agree on the design and give you the exact price including decoration." },
+      { "t": "Pay a deposit", "d": "A {deposit} deposit secures your date. Pay the rest at pickup by card or cash." },
+      { "t": "Collect your cake", "d": "Pickup at Białoruska 7 or delivery by taxi at taxi rates." }
+    ]
+  },
+
+  "calc": {
+    "title": "How much cake do you need?",
+    "lead": "We plan 150–200 g per guest. Pick a flavour and the number of guests to see an estimate.",
+    "guests": "Number of guests",
+    "flavor": "Flavour",
+    "weight": "Cake weight",
+    "price": "Estimated price",
+    "min": "minimum weight",
+    "tier2": "Can be made as a 2-tier cake",
+    "tier3": "Can be made as a 3-tier cake",
+    "decor": "Without decoration. Decoration is quoted once the design is agreed.",
+    "cta": "Send a request with these details"
+  },
+
+  "prices": {
+    "title": "Prices",
+    "lead": "Cakes are priced by weight: flavour price × kilograms + decoration. Minimum weight is shown next to each flavour.",
+    "rules": [
+      { "t": "Minimum weight", "d": "Cakes from 2 kg, some flavours from 1.5 kg." },
+      { "t": "Portion", "d": "150–200 g of cake per guest." },
+      { "t": "Extra weight", "d": "We charge at most 300 g over (4–7 kg cakes – 500 g), the rest is on us." }
+    ]
+  },
+
+  "reviews": {
+    "title": "What clients say",
+    "lead": "We don't write reviews ourselves. They are all public on Google Maps.",
+    "cta": "Read {reviews} reviews on Google"
+  },
+
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "q": "How far in advance should I order?", "a": "Usually {leadTime} days ahead. For weddings and big events, book your date a few weeks in advance. Need it urgently? Message us, sometimes we have free slots." },
+      { "q": "How much does a decorated cake cost?", "a": "Price = weight × flavour price + decoration. For example, a 2.5 kg Raspberry cake: 2.5 × 130 = 325 zł plus decoration. Decoration depends on complexity, so we quote it once we see your idea." },
+      { "q": "What size cake should I choose?", "a": "150–200 g per guest. For 15 guests that's 2.3–3 kg. For weddings about 150 g per person is enough, as there are other desserts too. Try the calculator above." },
+      { "q": "How does the deposit work?", "a": "Once the design and price are agreed, you pay a {deposit} deposit by bank transfer. It secures your date. You pay the rest at pickup by card or cash." },
+      { "q": "Can I change or cancel my order?", "a": "Design details can be changed until we start baking. If your plans change, tell us as early as possible and we'll find a solution." },
+      { "q": "Do you deliver?", "a": "Pickup at Plac targowy „Manhattan”, Białoruska 7, unit 12. We can also send the cake by taxi within Kraków at taxi rates." },
+      { "q": "Can you make a cake from a photo?", "a": "Yes. Send us an inspiration photo and we'll tell you what's possible and how much it costs. We don't copy cakes one-to-one, we make them in our own style." },
+      { "q": "Do you cater for allergies?", "a": "Mention allergies in your request. Cakes may contain nuts, milk, eggs and gluten. We'll suggest suitable flavours." },
+      { "q": "How do I transport and store the cake?", "a": "Hold the box from the bottom and keep it on a flat surface (car floor or boot, with air conditioning in summer). Keep refrigerated and take it out 20–30 minutes before serving. Cut with a long, warmed knife." },
+      { "q": "Can I get an invoice (faktura)?", "a": "Yes, include your invoice details in the request or message." }
+    ]
+  },
+
+  "form": {
+    "title": "Request a quote",
+    "lead": "Fill in what you know. We'll reply with an exact price and a design proposal. It's free and non-binding.",
+    "name": "Your name",
+    "phone": "Phone",
+    "contactVia": "How should we contact you?",
+    "contactOptions": ["WhatsApp", "Telegram", "Phone call", "Instagram", "Email"],
+    "date": "Event date",
+    "product": "What would you like?",
+    "productOptions": ["Cake", "Wedding cake", "Bento cake", "Mousse cake", "Cheesecake", "Cupcakes", "Sweet table / desserts", "Not sure yet"],
+    "guests": "Number of guests or weight",
+    "flavor": "Flavour",
+    "flavorAny": "Recommend me one",
+    "design": "Design idea",
+    "designPh": "Colours, lettering, theme, link to an inspiration photo…",
+    "delivery": "Pickup or delivery",
+    "deliveryOptions": ["Pickup", "Taxi delivery"],
+    "consent": "I agree to my data being processed to answer this request.",
+    "privacy": "Privacy policy",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "note": "It's easiest to send an inspiration photo via WhatsApp or Instagram after the request.",
+    "okTitle": "Thank you! We've got your request.",
+    "okText": "We'll reply as soon as possible. Want it faster? Send your inspiration photo on WhatsApp.",
+    "err": "Couldn't send. Please message us on WhatsApp.",
+    "required": "Please fill in your name, phone and date.",
+    "waIntro": "Hello! Quote request from the website:"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone / WhatsApp",
+    "email": "Email",
+    "address": "Pickup address",
+    "social": "Social media",
+    "map": "Open in Google Maps"
+  },
+
+  "footer": { "rights": "All rights reserved.", "privacy": "Privacy policy", "cookies": "Cookie settings" },
+
+  "consent": {
+    "text": "We use cookies for statistics and advertising to improve the site. You can accept or decline.",
+    "accept": "Accept",
+    "reject": "Only necessary"
+  },
+
+  "privacyPage": {
+    "title": "Privacy policy",
+    "body": [
+      "Data controller: {company}, NIP {nip}, REGON {regon}, {address}. Contact: {email}.",
+      "Form data (name, phone, date, preferences) is used only to answer your request and fulfil the order (Art. 6(1)(b) GDPR). We keep it as long as the order and accounting rules require.",
+      "The form may be sent through an email delivery service (Web3Forms) or open WhatsApp. We do not sell your data or share it with others for their marketing.",
+      "Statistics (Google Analytics) and advertising (Meta Pixel) cookies are enabled only after your consent. You can change your choice any time via the “Cookie settings” link in the footer.",
+      "You have the right to access, correct, delete and restrict processing of your data, and to complain to the Polish data protection authority (Prezes UODO). Email us to exercise these rights."
+    ],
+    "back": "Home"
+  }
+}
