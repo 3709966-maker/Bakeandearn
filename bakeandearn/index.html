@@ -16,7 +16,7 @@ var CONFIG = {
   bot: "BakeEarnSupport_bot",   // Telegram-бот без @
   payBasic: "",                  // посилання на оплату 199 грн (Monobank, WayForPay, LiqPay…). Порожньо — кнопка веде в бот
   payPro: "",                    // посилання на оплату 699 грн. Порожньо — кнопка веде в бот
-  videoId: ""                    // ID відео на YouTube для прев'ю (напр. "dQw4w9WgXcQ"). Порожньо — блок прихований
+  videoId: ""                    // ID відео на YouTube (напр. "dQw4w9WgXcQ"). Порожньо — показується заглушка «скоро»
 };
 </script>
 <style>
@@ -141,6 +141,9 @@ mark{background:var(--cell-in);padding:0 .2em;border-radius:4px;color:inherit}
 /* Відео */
 .video{aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;background:#000;margin-top:24px}
 .video iframe{width:100%;height:100%;border:0}
+.video-soon{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:16px;text-align:center;color:#f4ebe1;background:linear-gradient(135deg,#5b3a29,#2a1f1a);font-size:16px}
+.play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.15);position:relative}
+.play::after{content:"";position:absolute;left:26px;top:20px;border-left:18px solid #ffe7a3;border-block:12px solid transparent}
 
 /* FAQ */
 .faq{max-width:760px}
@@ -297,7 +300,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
         <div class="price">699 <small>грн</small></div>
         <ul>
           <li>Усе, що в тарифі «Таблиця»</li>
-          <li class="plus"><strong>Я порахую й внесу 20 ваших рецептів</strong> — ви надсилаєте рецепти, отримуєте готову заповнену таблицю</li>
+          <li class="plus"><strong>Я порахую й внесу 20 ваших рецептів</strong> — ви надсилаєте рецепти, а <strong>протягом 1 дня</strong> отримуєте готову заповнену таблицю</li>
           <li class="plus"><strong>Закритий чат</strong> кондитерів, які рахують собівартість</li>
           <li class="plus"><strong>Созвон 30 хвилин</strong> — відповім на ваші питання, якщо потрібно</li>
         </ul>
@@ -314,10 +317,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
     <ol class="steps">
       <li><h3>Оплачуєте</h3><p>Обираєте тариф і оплачуєте онлайн.</p></li>
       <li><h3>Отримуєте таблицю</h3><p>Таблиця й відеоінструкція приходять у Telegram-бот.</p></li>
-      <li><h3>Тариф 699: рецепти</h3><p>Надсилаєте 20 рецептів у будь-якому вигляді — фото зошита, текст, файл. Вас додають у чат.</p></li>
+      <li><h3>Тариф 699: рецепти</h3><p>Надсилаєте 20 рецептів у будь-якому вигляді — фото зошита, текст, файл. Протягом 1 дня отримуєте заповнену таблицю, вас додають у чат.</p></li>
       <li><h3>Знаєте свої цифри</h3><p>Собівартість, ціна й залишок по кожному торту. Залишились питання — созвон 30 хвилин.</p></li>
     </ol>
-    <div class="video" id="video" hidden></div>
+    <div class="video" id="video"><div class="video-soon"><span class="play" aria-hidden="true"></span>Відеоінструкція з'явиться тут найближчим часом</div></div>
   </div>
 </section>
 
@@ -330,6 +333,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
     <details><summary>У якій валюті рахує?</summary><p>У будь-якій. Валюту вказуєте один раз у «Налаштуваннях», і вона підставляється в усі розрахунки.</p></details>
     <details><summary>А якщо в мене більше 8 тортів?</summary><p>Клацніть правою кнопкою на вкладці десерту → «Копіювати». Можна додати скільки завгодно.</p></details>
     <details><summary>У якому вигляді надсилати рецепти?</summary><p>Як вам зручно: фото сторінки із зошита, текст у повідомленні, документ. Головне — продукти і їх вага. Ціни на продукти теж знадобляться: надішліть, де й почому купуєте.</p></details>
+    <details><summary>Як швидко ви заповните мої 20 рецептів?</summary><p>Протягом 1 дня після того, як ви надішлете рецепти й ціни на продукти.</p></details>
     <details><summary>Як і коли я отримаю таблицю?</summary><p>Після оплати — у Telegram-боті @BakeEarnSupport_bot: файл, відео, а для тарифу 699 грн — посилання на чат і запис на созвон.</p></details>
     <details><summary>Можна поділитися таблицею з подругою?</summary><p>Таблиця для вашої особистої роботи, передавати її іншим не можна. Хочете порадити — дайте посилання на цю сторінку.</p></details>
   </div>
@@ -374,7 +378,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
     var v = document.getElementById('video');
     v.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(CONFIG.videoId) +
       '" title="Відеоінструкція" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>';
-    v.hidden = false;
   }
 })();
 </script>
